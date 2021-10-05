@@ -1,8 +1,14 @@
-{{ define "main"}}
+{{ partial "header.html"}}
 <h1>Listado de canales de television</h1>
 <ul>
       {{ range  .Site.Data.tv }}
+      
       <h1><li>  {{ .name }}</li></h1>   
+    {{ range.channels}}
+        <a href="{{.web}}">
+<img src="{{.logo}}" alt="{{.name }}">
+
+        </a>
       {{ end }}
 </ul>
 
