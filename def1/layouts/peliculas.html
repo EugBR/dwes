@@ -1,0 +1,10 @@
+{{ define "main"}}
+<h1>Listado de canales de television</h1>
+<ul>
+      {{ range  .Site.Data.tv }}
+      <h1><li>  {{ .name }}</li></h1>   
+      {{ end }}
+</ul>
+
+
+{{end}}

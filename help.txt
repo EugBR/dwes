@@ -1,1 +1,2 @@
-wget https://github.com/MAlejandroR/staticSite/edit/main/data/tv.json
+wget https://github.com/MAlejandroR/staticSite/blob/main/data/tv.json
+https://github.com/MAlejandroR/staticSite/blob/main/layouts/docs/pruebas.html
