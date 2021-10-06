@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+
+
+{{ .Content }}
+
+
+<h1>Listado de canales de television</h1>
+<ul>
+    {{range .Site.Data.tv }}
+      <li> {{.name }} 
+      {{ range .channels }}
+        {{.name}}
+        <a href="{{.web }}"><img src="{{.logo}}"  alt="{{.name}}"/></a>
+      {{end}}
+    </li>
+
+    {{ end }}
+</ul>
+
+
+

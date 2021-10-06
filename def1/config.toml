@@ -2,7 +2,28 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "hugo-theme-learn"
+defaultContentLanguageInSubdir = true
  
 # For search functionality
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
+
+
+[languages]
+
+[languages.es]
+title = "Desarrollo Web"
+languageName="Español"
+weight = 1
+
+
+[languages.en]
+title = "Web development"
+languageName="Ingles"
+weight = 2
+
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-php'></i> Php page"
+indetifier = "a2"
+url = "https//php.net"
